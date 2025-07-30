@@ -1,18 +1,23 @@
 ---
-title: "Vetruvian Man in the Age of AI"
+title: "Vitruvian Man in the Age of AI"
 subtitle: "Thoughts on Human-Centered principles of design"
 author: "Andriy Koval"
 format:
-  html:
-    page-layout: full
-    toc: true
-    toc-location: right
-    code-fold: show
-    theme: yeti
+  revealjs:
+    theme: dark
+    slide-number: true
+    preview-links: auto
+    logo: ""
+    footer: "Human-Centered AI Design"
+    transition: slide
+    background-transition: fade
     highlight-style: breeze
-    colde-line-numbers: true
+    code-fold: show
+    code-line-numbers: true
     self-contained: true
     embed-resources: true
+    smaller: true
+    scrollable: true
 editor: visual
 editor_options: 
   chunk_output_type: console
@@ -20,7 +25,10 @@ editor_options:
 
 # Mission
 
-Jean-Paul (JP) Lalonde advocated for a human-centered approach to AI: just as Vetruvian Man reminds us of placing the human in the center of the architecture design, so must we place humans in the center of the information architecture we design to enhance our intelligence with LLMs. 
+Jean-Paul (JP) Lalonde advocated for a human-centered approach to AI: just as Vitruvian Man reminds us of placing the human in the center of the architecture design, so must we place humans in the center of the information architecture we design to enhance our intelligence with LLMs. 
+
+<!-- ![Vitruvian AI](../../analysis/eda-1/vitruvian-ai.jfif) -->
+![Vitruvian AI](../../analysis/eda-1/images/vitruvian-ai.jfif)
 
 # **Definition of Terms**
 
@@ -136,54 +144,5 @@ This report operates with the following data objects:
 #| code-fold: true
 #| cache: true
 #| results: hide
-
-```
-
-## Inspect starting files
-
-```{r}
-#| label: inspect-data-0
-#| code-summary: Inspect contents of the available data tables
-#| code-fold: false
-#| eval: true
-#| cache: true
-ds_support %>% glimpse()
-```
-
-```{r}
-#| label: inspect-data-1
-#| code-summary: Inspect contents of the available data tables
-#| code-fold: false
-#| eval: true
-#| cache: true
-```
-
-```{r}
-#| label: inspect-data-2
-#| code-summary: Inspect contents of the available data tables
-#| code-fold: false
-#| eval: true
-#| cache: true
-cat("QMD file has won")
-```
-
-## Tweak 1
-
-```{r}
-#| label: tweak-data-1
-#| code-summary: Organize data into `ds0` form. Cleaning up names, optimize some data types.
-#| code-fold: true
-#| cache: true
-#| results: hide
-#| eval: false
-```
-
-# Fundamentals
-
-```{r}
-#| code-summary: Basic accounting 
-#| code-fold: true
-#| eval: true
-#| cache: true
 
 ```
