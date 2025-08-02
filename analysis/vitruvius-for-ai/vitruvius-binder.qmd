@@ -39,27 +39,47 @@ bibliographystyle: "springer-humanities-author-date"
 
 # Introduction
 
-[Jean-Paul (JP) Lalonde](https://www.linkedin.com/in/jean-paullalonde/), at the AI Agency Summit in July 2025, advocated for a human-centered approach to AI adoption, taking a famous DaVinci drawing Vitruvian Man as the sybmol^[This concept builds on the classical architectural principles of Marcus Vitruvius Pollio, who emphasized that good architecture must satisfy three fundamental principles: firmitas (strength), utilitas (functionality), and venustas (beauty).]:  
+[Jean-Paul (JP) Lalonde](https://www.linkedin.com/in/jean-paullalonde/), at the AI Agency Summit in July 2025, advocated for a human-centered approach to AI adoption, chosing a famous DaVinci drawing Vitruvian Man as the banner^[This concept builds on the classical architectural principles of Marcus Vitruvius Pollio, who emphasized that good architecture must satisfy three fundamental principles: firmitas (strength), utilitas (functionality), and venustas (beauty).]. I interpret JP's idea as follows: 
 
 > Just as Vitruvian Man reminds us of placing the human in the center of architectural design, so must we place humans in the center of the information architecture we design to enhance our intelligence with large language models.
 
-This essay attempts to explicate the specifics of this idea, particularly how it relates to data analytics and reproducible research.
+This essay attempts to elaborate on this  idea and work out some specifics that could be useful for practitioners of data analytics and reproducible research.
 
 ::: {.column-margin}
 ![The Vitruvian AI concept visualizes the integration of human intelligence with artificial intelligence systems, maintaining the human as the central organizing principle.](images/vitruvian-ai.jfif){width=90%}
 :::
 
+Rallying around the banner of the Vitruvian Man, carries profound implications and responsibilities for how we conceptualize, design, and implement AI systems. Da Vinci's famous drawing illustrates the human form as the fundamental measure of architectural proportion — a reminder that all built environments must serve human scale, human needs, and human aspirations. Similarly, our information architectures must be measured not only by their computational sophistication but by their capacity to enhance human potential.
+
+## Cui Bono? 
+
+But which humans specifically should benefit from adhering to this design axiom? everyone, everywhere, at the same time? the information highway is travelled by a host of roles: developers, statistitians, managers, users, invested parties, to name just a few. the richer the political(note: many interest) environment becomes the greater the chance to encounter conflicts of priories.  can we be more specific? 
+
+the current investigation deliberately limits the scope to focus  primarily to **humans who practice data analytics and reproducible research** and to the lesser degree on the cunsumers of the analytic products created in such a practice. our intent is to discuss how to "conceptualize, design, and implement AI systems **for research analytics**".
+
+
+
+Some ideas and examples might be relevant in other context, but, reader, be advised that i harbour no such intentions, so generalize at your own peril. 
+
+
+
+
+Any goverment data analytic shop will be thrilled to offer lip service to this sentiment. Enhancing human potential, however, still struggles to find its way onto the job descriptions nside analytic government bureaucracy.
+
+
+
+The challenge we face today transcends mere technical implementation; it is fundamentally architectural^[Architecture, in this context, refers to the systematic organization of information flows, decision points, and feedback loops that govern human-AI interaction.]. How do we design systems that amplify rather than diminish human intelligence? How do we ensure that artificial intelligence becomes a tool for human flourishing rather than a source of alienation, dependency, or intellectual atrophy?
+
+
+## Not a tool
+
 One of the learning takeaways from the previous year that [Janak Alford](https://www.linkedin.com/in/janak-alford/) listed during the opening remarks of the summit, called to shift in perspective:  
 
 > AI is not a tool, but a business solution
->
-> 
+
+Such a perspective allows for new ways to approach task delegation. However, the **environment of interfacing** with AI is very much a tool (be it an IDE, a conceptual framework, or a set of practice standards) and it is the design of this tool that shapes the focus of current investigation.
 
 
-
-This observation carries profound implications for how we conceptualize, design, and implement AI systems. Da Vinci's famous drawing of Vitruvian Man illustrates the human form as the fundamental measure of architectural proportion—a reminder that all built environments must serve human scale, human needs, and human aspirations. Similarly, our information architectures must be measured not by their computational sophistication but by their capacity to enhance human potential.
-
-The challenge we face today transcends mere technical implementation; it is fundamentally architectural^[Architecture, in this context, refers to the systematic organization of information flows, decision points, and feedback loops that govern human-AI interaction.]. How do we design systems that amplify rather than diminish human intelligence? How do we ensure that artificial intelligence becomes a tool for human flourishing rather than a source of alienation, dependency, or intellectual atrophy?
 
 ::: {.column-margin}
 ![JP Lalonde's AI Agency Summit slide referencing the Vitruvian Man.  
