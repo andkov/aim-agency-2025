@@ -47,7 +47,7 @@ technical_implementation:
 # Rationale: Enables independent testing and pedagogical clarity
 
 # AI-implemented structure
-source("scripts/data-collection/linkedin-scraper.R")    # Phase 1
+source("scripts/research-framework.R")              # Phase 1
 source("scripts/analytics/sentiment-analysis.R")       # Phase 2  
 source("scripts/reporting/automated-reports.R")        # Phase 3
 ```
@@ -120,7 +120,7 @@ Start with high-level requirements, then progressively add detail:
 
 **Iteration 1** (Human): "We need to track social media conversations"
 **Iteration 2** (AI Clarification): "Which platforms? What keywords? What time range?"
-**Iteration 3** (Human Refinement): "LinkedIn and Twitter, Agency event keywords, 30 days pre- to 90 days post-event"
+**Iteration 3** (Human Refinement): "Conference materials and participant interviews, Agency event themes, comprehensive ethical review"
 **Iteration 4** (AI Implementation): Specific scraping code with error handling
 
 ### **3. Code-as-Documentation**

@@ -1,163 +1,164 @@
-# 🏗️ Technical Architecture - AIM Agency 2025
+# 🏗️ Project Architecture - AIM Agency 2025 Essay Platform
 
-> **Purpose**: Comprehensive overview of the three-phase technical architecture for monitoring AI community event impact
+> **Purpose**: Comprehensive overview of the three-phase architecture for collaborative essay writing and investigation platform
 
 ## **🎯 System Overview**
 
-The AIM Agency 2025 Impact Monitoring System follows a **three-phase architecture** designed for both functionality and pedagogical clarity:
+The AIM Agency 2025 Essay & Investigation Platform follows a **three-phase architecture** designed for both functionality and pedagogical clarity:
 
 ```mermaid
 graph TB
-    A[Social Media APIs] --> B[Data Collection Pipeline]
-    B --> C[Data Validation & Cleaning]
-    C --> D[Analytics Engine]
-    D --> E[Sentiment Analysis]
-    D --> F[Thematic Categorization]
-    D --> G[Trend Detection]
-    E --> H[Reporting Engine]
+    A[Conference Materials] --> B[Research Framework]
+    B --> C[Source Validation & Citation]
+    C --> D[Essay Writing Engine]
+    D --> E[Collaborative Editing]
+    D --> F[Peer Review System]
+    D --> G[Version Control]
+    E --> H[Publication Engine]
     F --> H
     G --> H
-    H --> I[Automated Reports]
-    H --> J[Interactive Dashboard]
-    H --> K[Longitudinal Tracking]
+    H --> I[Formatted Essays]
+    H --> J[Interactive Platform]
+    H --> K[Distribution System]
 ```
 
-## **📊 Phase 1: Foundation & Data Collection**
+## **📝 Phase 1: Foundation & Research Framework**
 
-**Objective**: Establish ethical, automated data collection from public social media sources
+**Objective**: Establish ethical research methodology and writing infrastructure for AI governance essays
 
 ### **Core Components**
-- **Social Media Scrapers** (LinkedIn, X/Twitter)
-  - Rate-limited API calls respecting platform policies
-  - Configurable search parameters for event-related content
-  - Robust error handling and retry mechanisms
+- **Research Framework** (`scripts/research-framework.R`)
+  - Source validation and ethical compliance checking
+  - Citation management with APA formatting
+  - Research progress tracking and logging
 
-- **Data Validation Pipeline**
-  - Input sanitization and format standardization
-  - Duplicate detection and removal
-  - Data quality scoring and flagging
+- **Essay Templates** (`scripts/templates/`)
+  - Structured R Markdown templates for academic writing
+  - Consistent formatting and metadata tracking
+  - Collaborative authorship documentation
 
-- **Ethical Framework**
-  - Public-only content collection
-  - Privacy-preserving data handling
-  - Compliance with platform terms of service
+- **Ethical Guidelines** (`docs/ethics-guidelines.md`)
+  - Academic integrity and source attribution standards
+  - Participant consent and privacy protection
+  - Quality assurance and peer review processes
 
 ### **Technical Stack**
-- **Language**: R (primary), Python (scraping utilities)
-- **Data Storage**: CSV/Parquet for processed data, JSON for raw feeds
-- **APIs**: LinkedIn API, Twitter API v2, custom scrapers
-- **Scheduling**: Cron jobs for regular collection intervals
+- **Language**: R (primary), R Markdown for document generation
+- **Data Storage**: RDS for research logs, CSV for source databases
+- **Version Control**: Git for collaborative writing workflows
+- **Templates**: R Markdown with custom CSS/styling
 
 ### **Deliverables (Issue #2)**
-- [ ] LinkedIn scraping module with ethical guidelines
-- [ ] Twitter/X scraping infrastructure  
-- [ ] Data validation and cleaning pipeline
-- [ ] Rate limiting and error handling framework
+- [ ] Essay template system with metadata tracking
+- [ ] Research framework with source validation
+- [ ] Citation management and APA formatting
+- [ ] Collaborative writing workflow documentation
 
-## **🧠 Phase 2: Analytics Engine**
+## **🧠 Phase 2: Content Creation & Analysis**
 
-**Objective**: Transform raw social media data into meaningful insights about AI community impact
+**Objective**: Transform research into high-quality essays through collaborative writing and analytical frameworks
 
 ### **Core Components**
-- **Sentiment Analysis System**
-  - Multi-model approach (VADER, TextBlob, transformer models)
-  - Domain-specific tuning for AI/government terminology
-  - Confidence scoring and uncertainty quantification
+- **Collaborative Writing System**
+  - Version control integration for multi-author essays
+  - Peer review workflows with structured feedback
+  - Conflict resolution and consensus-building tools
 
-- **Thematic Categorization** 
-  - AI adoption themes (government, public service, innovation)
-  - Event impact categories (networking, knowledge transfer, policy)
-  - Automated tagging with manual validation
+- **Thematic Analysis Framework** 
+  - AI governance themes (policy, ethics, implementation)
+  - Conference topic categorization (agency, infrastructure, collaboration)
+  - Cross-theme analysis and synthesis tools
 
-- **Trend Detection Algorithms**
-  - Time-series analysis for conversation evolution
-  - Spike detection for viral content identification
-  - Influence network mapping
+- **Quality Assurance System**
+  - Automated citation validation
+  - Plagiarism detection and originality checking
+  - Fact-checking workflows and source verification
 
 ### **Technical Stack**
-- **ML Libraries**: tidytext, sentiment, word2vec, transformers
-- **Statistics**: forecast, changepoint, igraph
-- **Validation**: Cross-validation, human annotation benchmarks
+- **Writing Tools**: R Markdown, Quarto, collaborative editing
+- **Analysis**: tidytext, quanteda, thematic analysis packages
+- **Validation**: Academic integrity tools, citation validators
 
 ### **Deliverables (Issues #3-4)**
-- [ ] Multi-model sentiment analysis pipeline
-- [ ] Thematic classification system
-- [ ] Trend detection and alert mechanisms
-- [ ] Longitudinal tracking infrastructure
+- [ ] Collaborative writing infrastructure
+- [ ] Thematic analysis and categorization system
+- [ ] Peer review and feedback mechanisms
+- [ ] Quality assurance and validation workflows
 
-## **📈 Phase 3: Reporting & Visualization**
+## **📈 Phase 3: Publication & Dissemination**
 
-**Objective**: Generate automated, actionable insights through reports and interactive dashboards
+**Objective**: Generate publication-ready essays with interactive features and broad accessibility
 
 ### **Core Components**
-- **Automated Report Generation**
-  - Daily sentiment summaries
-  - Weekly trend analysis reports  
-  - Monthly longitudinal impact assessments
-  - Custom report templates for stakeholders
+- **Publication Engine**
+  - Multi-format output (HTML, PDF, EPUB)
+  - Academic formatting with proper citations
+  - Automated cross-referencing and indexing
+  - Version control and change tracking
 
-- **Interactive Dashboards**
-  - Real-time sentiment monitoring
-  - Thematic evolution visualization
-  - Geographic impact mapping (Alberta focus)
-  - Comparative event analysis
+- **Interactive Platform**
+  - Web-based reading interface
+  - Commenting and discussion systems
+  - Reader feedback and engagement metrics
+  - Social sharing and distribution tools
 
-- **Longitudinal Impact Visualization**
-  - Pre/during/post event impact tracking
-  - Conversation lifecycle analysis
-  - Influence propagation visualization
+- **Accessibility & Distribution**
+  - Mobile-responsive design
+  - Screen reader compatibility
+  - Multiple language support (future enhancement)
+  - Open access publishing with proper licensing
 
 ### **Technical Stack**
-- **Reporting**: R Markdown, Quarto, automated scheduling
-- **Visualization**: ggplot2, plotly, D3.js integration
-- **Dashboards**: Shiny, flexdashboard, Observable
-- **Distribution**: GitHub Pages, automated email delivery
+- **Publishing**: bookdown, quarto-pub, Jekyll/Hugo
+- **Platform**: Shiny, blogdown, GitHub Pages
+- **Distribution**: RSS feeds, email newsletters, social media integration
+- **Analytics**: Reader engagement tracking, feedback analysis
 
 ### **Deliverables (Issues #5-6)**
-- [ ] Automated reporting engine with templates
-- [ ] Interactive dashboard for real-time monitoring
-- [ ] Longitudinal visualization framework
-- [ ] Stakeholder communication system
+- [ ] Automated publication engine with formatting
+- [ ] Interactive web platform for essay reading
+- [ ] Reader engagement and commenting system
+- [ ] Distribution and accessibility infrastructure
 
-## **🔗 Integration & Data Flow**
+## **🔗 Integration & Content Flow**
 
-### **Data Pipeline**
-1. **Collection** → Raw social media posts (JSON)
-2. **Validation** → Cleaned, standardized data (CSV/Parquet)
-3. **Analytics** → Enriched data with sentiment/themes (R data frames)
-4. **Reporting** → Aggregated insights (Reports, dashboards)
+### **Writing Pipeline**
+1. **Research** → Source validation and citation management
+2. **Drafting** → Collaborative writing with version control
+3. **Review** → Peer feedback and quality assurance
+4. **Publication** → Multi-format output and distribution
 
 ### **Quality Assurance**
-- **Testing**: Unit tests for each pipeline component
-- **Validation**: Human annotation for model performance
-- **Monitoring**: Automated alerts for data quality issues
-- **Documentation**: Comprehensive logging and audit trails
+- **Ethics Review**: Compliance with research ethics guidelines
+- **Fact Checking**: Source verification and accuracy validation
+- **Peer Review**: Structured feedback from collaborators
+- **Editorial Oversight**: Final quality and style consistency
 
 ## **⚙️ Configuration & Deployment**
 
 ### **Environment Setup**
 - **R Environment**: renv for package management
 - **Dependencies**: Documented in `config.yml` and installation scripts
-- **Secrets Management**: Environment variables for API keys
-- **Scheduling**: Cron/systemd for automated execution
+- **Templates**: Standardized essay and analysis templates
+- **Workflows**: Git-based collaboration and review processes
 
 ### **Scalability Considerations**
 - **Modular Design**: Each phase operates independently
-- **Configurable Parameters**: Easy adjustment of collection/analysis settings
-- **Performance Monitoring**: Resource usage tracking and optimization
-- **Error Recovery**: Robust failure handling and restart mechanisms
+- **Configurable Templates**: Easy customization for different essay types
+- **Collaborative Features**: Support for multiple simultaneous projects
+- **Publication Flexibility**: Multiple output formats and distribution channels
 
 ---
 
 ## **🎓 Learning Outcomes**
 
 After implementing this architecture, contributors will understand:
-- **Ethical data collection** practices for social media research
-- **Scalable analytics pipelines** for text analysis and sentiment monitoring  
-- **Automated reporting systems** for stakeholder communication
-- **Real-time monitoring** approaches for evolving conversations
-- **Open science practices** for reproducible research
+- **Ethical research practices** for academic writing and source validation
+- **Collaborative writing workflows** using version control and peer review  
+- **Publication systems** for multi-format academic content distribution
+- **Quality assurance processes** for maintaining academic integrity
+- **Open science practices** for transparent, reproducible scholarship
 
 ---
 
-**Each phase builds on the previous, creating a comprehensive system that's both functional and educational.**
+**Each phase builds on the previous, creating a comprehensive platform that's both functional and educational.**
