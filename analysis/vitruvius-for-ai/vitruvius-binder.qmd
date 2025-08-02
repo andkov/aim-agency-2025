@@ -1,0 +1,250 @@
+---
+title: "Vitruvius for AI"
+subtitle: "Ten Books on Information Architecture"
+author: 
+  - name: "Andriy Koval"
+    email: "andriy.koval@gov.ab.ca"
+date: today
+documenttype: Handout
+abstract: |
+  This essay explores the application of classical architectural principles to the design of human-centered artificial intelligence systems. Drawing inspiration from Marcus Vitruvius Pollio's foundational treatise "De Architectura," we present ten principles for creating AI systems that amplify rather than replace human intelligence. The framework emphasizes the necessity of placing humans at the center of information architecture design, ensuring that our most sophisticated technologies serve our highest aspirations for cognitive enhancement and collaborative intelligence.
+format:
+  html:
+    self-contained: true
+    embed-resources: true
+    keep-md: true
+    page-layout: full
+    reference-location: margin
+    title-block-style: none
+    css: _extensions/fredguth/tufte-inspired/styles.scss
+    number-sections: false
+    linkcolor: Maroon
+    backgroundcolor: FloralWhite
+    sidebarbackgroundcolor: FloralWhite
+    mainfont: "ETBembo"
+    toc-location: left
+    toc-title: "Contents"
+    code-annotations: hover
+    default-image-extension: svg
+toc: true
+execute:
+  echo: false
+  warning: false
+  message: false
+  cache: true
+  keep-md: true
+bibliography: references.bib
+bibliographystyle: "springer-humanities-author-date"
+---
+
+# Introduction
+
+[Jean-Paul (JP) Lalonde](https://www.linkedin.com/in/jean-paullalonde/), at the AI Agency Summit in July 2025, advocated for a human-centered approach to AI adoption, adopting a famous DaVinci drawing Vitruvian Man as the sybmol^[This concept builds on the classical architectural principles of Marcus Vitruvius Pollio, who emphasized that good architecture must satisfy three fundamental principles: firmitas (strength), utilitas (functionality), and venustas (beauty).]:  
+
+> Just as Vitruvian Man reminds us of placing the human in the center of architectural design, so must we place humans in the center of the information architecture we design to enhance our intelligence with large language models.
+
+This essay attempts to explicate the specifics of this idea, particularly how it relates to data analytics and reproducible research.
+
+::: {.column-margin}
+![The Vitruvian AI concept visualizes the integration of human intelligence with artificial intelligence systems, maintaining the human as the central organizing principle.](images/vitruvian-ai.jfif){width=90%}
+:::
+
+One of the learning takeaways from the previous year that [Janak Alford](https://www.linkedin.com/in/janak-alford/) listed during the opening remarks of the summit, called to shift in perspective:  
+
+> AI is not a tool, but a business solution
+>
+> 
+
+
+
+This observation carries profound implications for how we conceptualize, design, and implement AI systems. Da Vinci's famous drawing of Vitruvian Man illustrates the human form as the fundamental measure of architectural proportion—a reminder that all built environments must serve human scale, human needs, and human aspirations. Similarly, our information architectures must be measured not by their computational sophistication but by their capacity to enhance human potential.
+
+The challenge we face today transcends mere technical implementation; it is fundamentally architectural^[Architecture, in this context, refers to the systematic organization of information flows, decision points, and feedback loops that govern human-AI interaction.]. How do we design systems that amplify rather than diminish human intelligence? How do we ensure that artificial intelligence becomes a tool for human flourishing rather than a source of alienation, dependency, or intellectual atrophy?
+
+::: {.column-margin}
+![JP Lalonde's AI Agency Summit slide referencing the Vitruvian Man.  
+Source: [LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7355988864542388225/)](images/jp-slide-vitruvian.jpeg){width=90%}
+:::
+
+# Methodological Framework
+
+This section establishes the analytical foundation for our investigation. The computational environment and data processing procedures are documented here for reproducibility and transparency^[All code and data used in this analysis are available in the project repository, following principles of open science and reproducible research.].
+
+::: {.column-margin}
+**Technical Note**: This analysis employs computational methods implemented in R to examine patterns in human-AI interaction data. The methodological approach combines quantitative analysis with qualitative interpretation.
+:::
+
+The framework we employ recognizes that human-AI interaction is not merely a technical problem but a socio-technical challenge requiring interdisciplinary approaches that honor both computational rigor and human complexity.
+
+```{r setup}
+#| code-summary: Initial setup and working directory configuration
+#| include: false
+cat("Working directory: ", getwd())
+library(knitr)
+opts_knit$set(root.dir='../../') # keep this chunk isolated  
+```
+
+```{r global-options}
+#| code-summary: Document-wide formatting and display options
+#| include: false 
+cat("Working directory: ", getwd()) # verify location for reproducibility
+report_render_start_time <- Sys.time()
+
+# Configure chunk behavior for essay format
+opts_chunk$set(
+  results      = 'show',
+  message      = FALSE,
+  warning      = FALSE,
+  comment      = NA,
+  tidy         = FALSE,
+  out.width    = "100%", # responsive width for essay format
+  fig.width    = 8,      # larger figures for better readability
+  fig.height   = 5,      # adjusted aspect ratio
+  fig.path     = 'figures/',
+  dev          = 'svg',   # vector graphics for crisp display
+  dpi          = 300
+)
+
+# Essay-optimized settings
+echo_chunks    <- FALSE  # Hide code by default in essay
+message_chunks <- FALSE  
+options(width = 80)      # Narrower text width for readability
+ggplot2::theme_set(ggplot2::theme_minimal(base_size = 11)) # Clean, readable plots
+
+# Load computational layer
+read_chunk("./analysis/vitruvius-for-ai/computational-layer.R")
+```
+
+## Computational Environment
+
+The analysis environment comprises several interconnected components that enable reproducible research and transparent methodology.
+
+::: {.column-margin}
+**Reproducibility Note**: All package versions and system configurations are recorded to ensure that results can be replicated across different computing environments.
+:::
+
+```{r load-packages}
+#| code-summary: Load required R packages for analysis
+#| code-fold: true
+#| message: false
+```
+
+## Data Sources and Processing Pipeline
+
+Our analytical approach follows a structured pipeline that transforms raw data through several refinement stages, each documented for transparency and reproducibility.
+
+```{r load-sources}
+#| code-summary: Load custom functions and utilities
+#| code-fold: true
+```
+
+```{r declare-globals}
+#| code-summary: Define global parameters and constants
+#| code-fold: true
+```
+
+```{r declare-functions}
+#| code-summary: Define analysis-specific functions  
+#| code-fold: true
+```
+
+```{r define-query}
+#| code-summary: Specify data queries and selection criteria
+#| code-fold: true
+```
+
+# Data Architecture and Preparation
+
+The foundation of our analysis rests on carefully curated datasets that capture the essence of human-AI interaction patterns. This section details the data structures and preprocessing steps that enable our subsequent analysis.
+
+::: {.column-margin}
+**Data Philosophy**: Following Tufte's principles of data visualization, we prioritize clarity, precision, and efficiency in our data presentation. Every element serves the analytical narrative.
+:::
+
+```{r load-data}
+#| code-summary: Load and initialize primary data objects
+#| code-fold: true
+#| cache: true
+```
+
+## Initial Data Transformation {#sec-data-transform}
+
+The raw data undergoes systematic transformation to ensure analytical rigor and interpretive clarity^[Data transformation follows established principles of tidy data organization, where each variable forms a column, each observation forms a row, and each type of observational unit forms a table.].
+
+```{r tweak-data-0}
+#| code-summary: Primary data cleaning and organization
+#| code-fold: true
+#| cache: true
+```
+
+# The Ten Books: Principles of Human-Centered AI Architecture
+
+Drawing from Vitruvius's architectural treatise, we present ten foundational principles for designing AI systems that enhance rather than replace human intelligence. Each principle addresses a critical aspect of the human-AI relationship, from technical implementation to ethical considerations.
+
+## Book I: Foundations of Human-AI Symbiosis
+
+The first principle establishes that AI systems must be designed as amplifiers of human capability rather than replacements^[This principle directly challenges the prevailing narrative of AI as a substitute for human intelligence, instead positioning it as a collaborative partner.]. The architecture must preserve human agency while expanding cognitive capacity.
+
+::: {.column-margin}
+**Historical Parallel**: Just as Vitruvius emphasized that buildings must serve human needs while respecting natural constraints, AI systems must serve human goals while respecting cognitive limitations and preferences.
+:::
+
+## Book II: Transparency and Interpretability
+
+AI systems must provide clear explanations for their recommendations and decisions. Users should understand not only *what* the system suggests, but *why* it makes these suggestions and *how* confident it is in its recommendations.
+
+## Book III: Adaptive Learning and Personalization
+
+Human-centered AI systems learn from individual users while maintaining privacy and autonomy. The system adapts to personal working styles, preferences, and expertise levels without creating filter bubbles or reducing intellectual challenge.
+
+## Book IV: Error Recovery and Human Override
+
+Robust AI architectures include mechanisms for graceful error handling and human intervention. Users must always retain the ability to override system recommendations and guide the AI toward better solutions.
+
+## Book V: Contextual Awareness
+
+AI systems must understand and respond to situational context, including emotional states, time constraints, and environmental factors that influence human decision-making and information processing.
+
+## Book VI: Privacy and Data Sovereignty  
+
+Users maintain control over their personal data and can understand how their information is used to improve system performance. Privacy is not an afterthought but a foundational design principle.
+
+## Book VII: Collaborative Intelligence Networks
+
+AI systems facilitate collaboration between humans rather than isolating them. The architecture supports knowledge sharing, collective problem-solving, and community building.
+
+## Book VIII: Continuous Learning and Improvement
+
+Both human users and AI systems engage in ongoing learning. The architecture supports skill development, knowledge acquisition, and the evolution of human-AI partnership over time.
+
+## Book IX: Ethical Guidelines and Value Alignment
+
+AI systems embody explicit ethical principles and can engage in moral reasoning that aligns with human values while respecting cultural diversity and individual autonomy.
+
+## Book X: Sustainability and Long-term Thinking
+
+The design considers long-term consequences for individuals, communities, and society. AI systems promote sustainable practices and support intergenerational flourishing.
+
+# Implications and Future Directions
+
+The principles outlined in this essay provide a framework for evaluating and designing AI systems that truly serve human flourishing. As we continue to develop more sophisticated AI capabilities, these architectural principles become increasingly critical for ensuring positive outcomes.
+
+::: {.column-margin}
+**Research Note**: Ongoing empirical research is needed to validate these principles and develop practical implementation guidelines across different domains and applications.
+:::
+
+The challenge ahead lies not in the technical development of AI capabilities but in the thoughtful integration of these capabilities into human-centered architectures that preserve agency, dignity, and the full spectrum of human potential.
+
+# Conclusion
+
+Just as Vitruvius recognized that great architecture emerges from the harmonious integration of strength, utility, and beauty, human-centered AI requires the integration of technical capability, practical utility, and respect for human values. The ten principles presented here offer a starting point for this integration.
+
+The future of AI lies not in replacing human intelligence but in creating new forms of augmented intelligence that amplify our best qualities while supporting our ongoing growth and development. This is the promise of Vitruvian AI: technology that places humans at the center of the design, ensuring that our tools serve our highest aspirations.
+
+::: {.column-margin}
+**Final Reflection**: The ultimate measure of AI success is not computational efficiency but human flourishing—the extent to which these systems enable us to become more thoughtful, creative, and connected human beings.
+:::
+
+---
+
+*This essay is part of an ongoing research project examining human-AI interaction patterns and their implications for system design. All materials and code are available in the project repository for further study and development.*
