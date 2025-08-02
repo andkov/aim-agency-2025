@@ -18,18 +18,18 @@ This creates a **learning graph** where contributors can understand not just the
 | Issue | Learning Module | Key Components | Documentation |
 |-------|----------------|----------------|---------------|
 | [#1](../../issues/1) | Project Foundation | Architecture setup, documentation framework | [`README.md`](../README.md), [`docs/`](.) |
-| [#2](../../issues/2) | Data Collection | Social media scraping, ethical guidelines | [`docs/ethics-guidelines.md`](ethics-guidelines.md) |
-| [#3](../../issues/3) | Sentiment Analysis | ML pipeline, model validation | [`docs/analytics-methodology.md`](analytics-methodology.md) |
-| [#4](../../issues/4) | Longitudinal Tracking | Time-series analysis, trend detection | [`docs/architecture.md#phase-2`](architecture.md#-phase-2-analytics-engine) |
-| [#5](../../issues/5) | Automated Reporting | Report generation, stakeholder communication | [`docs/reporting-framework.md`](reporting-framework.md) |
-| [#6](../../issues/6) | Real-time Dashboard | Interactive visualization, monitoring | [`docs/architecture.md#phase-3`](architecture.md#-phase-3-reporting--visualization) |
+| [#2](../../issues/2) | Essay Framework | Writing templates, research methodology | [`docs/ethics-guidelines.md`](ethics-guidelines.md) |
+| [#3](../../issues/3) | Research & Investigation | Source validation, thematic analysis | [`docs/research-methodology.md`](research-methodology.md) |
+| [#4](../../issues/4) | Collaborative Writing | Version control, peer review workflows | [`docs/architecture.md#phase-2`](architecture.md#-phase-2-content-creation--analysis) |
+| [#5](../../issues/5) | Publication Engine | Automated formatting, distribution | [`docs/publication-framework.md`](publication-framework.md) |
+| [#6](../../issues/6) | Interactive Platform | Web interface, commenting system | [`docs/architecture.md#phase-3`](architecture.md#-phase-3-publication--dissemination) |
 
 ### **AI Memory Cross-References**
 | Memory Topic | Related Issues | Implementation Files | Learning Objective |
 |--------------|----------------|---------------------|-------------------|
 | Mission Statement | [#1](../../issues/1) | [`ai/mission.md`](../ai/mission.md) | Understanding project purpose and scope |
-| Ethical Framework | [#2](../../issues/2) | [`docs/ethics-guidelines.md`](ethics-guidelines.md) | Responsible data collection practices |
-| Technical Architecture | [#1](../../issues/1), [#2](../../issues/2), [#3](../../issues/3) | [`docs/architecture.md`](architecture.md) | System design principles |
+| Ethical Framework | [#2](../../issues/2) | [`docs/ethics-guidelines.md`](ethics-guidelines.md) | Responsible research and writing practices |
+| Project Architecture | [#1](../../issues/1), [#2](../../issues/2), [#3](../../issues/3) | [`docs/architecture.md`](architecture.md) | Essay platform design principles |
 | Human-AI Collaboration | All issues | [`docs/human-ai-patterns.md`](human-ai-patterns.md) | Collaboration methodology |
 
 ## **🔍 Commit Message Strategy**
@@ -65,15 +65,15 @@ References: #1, ai/mission.md, docs/README.md
 
 # Technical implementation commit  
 git commit -m "
-[Issue #2] Data Collection: Implement LinkedIn scraper with ethical safeguards
+[Issue #2] Essay Framework: Implement writing templates with research guidelines
 
-Creates rate-limited scraper with:
-- Public-only content collection
-- Automated compliance validation
-- Privacy-preserving data anonymization
+Creates structured framework with:
+- Academic citation standards and templates
+- Collaborative writing workflows
+- Automated research compliance validation
 
-Learning Impact: Demonstrates ethical data collection practices
-References: #2, docs/ethics-guidelines.md, scripts/linkedin-scraper.R
+Learning Impact: Demonstrates ethical research practices in collaborative writing
+References: #2, docs/ethics-guidelines.md, scripts/essay-framework.R
 "
 ```
 
@@ -133,9 +133,9 @@ Each significant decision in [`../ai/project-memory.md`](../ai/project-memory.md
 | Milestone | Completion Criteria | Related Issues | Documentation Status |
 |-----------|-------------------|----------------|---------------------|
 | **Foundation Complete** | Documentation framework established | [#1](../../issues/1) | ✅ Complete |
-| **Data Collection Ready** | Ethical scraping infrastructure | [#2](../../issues/2) | 🚧 In Progress |
-| **Analytics Validated** | Sentiment analysis accuracy >80% | [#3](../../issues/3) | 📋 Planned |
-| **Monitoring Active** | Real-time dashboard functional | [#6](../../issues/6) | 📋 Planned |
+| **Essay Framework Ready** | Writing templates and research guidelines | [#2](../../issues/2) | 🚧 In Progress |
+| **Research Validated** | Source validation and analysis methods | [#3](../../issues/3) | 📋 Planned |
+| **Platform Active** | Interactive essay platform functional | [#6](../../issues/6) | 📋 Planned |
 
 ### **Cross-Reference Validation**
 Regular checks ensure all references remain valid:

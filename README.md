@@ -1,12 +1,12 @@
-# 🎯 AIM Agency 2025 Impact Monitoring System
+# 🎯 AIM Agency 2025 Essay & Investigation Platform
 
-> **An open-source, pedagogical demonstration** of monitoring and analyzing real-world impact of AI community events through automated social media tracking, sentiment analysis, and longitudinal reporting.
+> **An open-source, pedagogical demonstration** of collaborative essay writing and investigative research on topics discussed during AI community events, showcasing human-AI collaboration patterns and ethical research practices.
 
 ## **🎓 Project Vision**
 
-This project tracks the impact of the "Agency - Summer 2025: Agentic Public Infrastructure" event (July 29, 2025, Edmonton, AB) on Alberta's AI ecosystem, particularly within government and public service sectors. 
+This project creates essays and investigations exploring themes from the "Agency - Summer 2025: Agentic Public Infrastructure" event (July 29, 2025, Edmonton, AB), focusing on AI's role in Alberta's government and public service sectors. 
 
-**More importantly**, it serves as a **living tutorial** demonstrating human-AI collaboration patterns, ethical data collection, reproducible analytics, and open science practices.
+**More importantly**, it serves as a **living tutorial** demonstrating human-AI collaboration patterns, ethical research practices, reproducible analysis workflows, and open science principles in academic writing.
 
 ## **🚀 Quick Start for Learners**
 
@@ -21,23 +21,23 @@ This project tracks the impact of the "Agency - Summer 2025: Agentic Public Infr
 - Each issue represents one core learning module
 - Check [`docs/`](docs/) for detailed tutorials and methodology
 
-## **🏗️ Technical Architecture**
+## **🏗️ Project Architecture**
 
 | Phase | Focus | Status | Key Components |
 |-------|-------|--------|----------------|
-| **Phase 1** | Foundation & Data Collection | 🚧 In Progress | Social media scraping, ethical guidelines, data validation |
-| **Phase 2** | Analytics Engine | 📋 Planned | Sentiment analysis, thematic categorization, trend detection |
-| **Phase 3** | Reporting & Visualization | 📋 Planned | Automated reports, dashboards, longitudinal tracking |
+| **Phase 1** | Foundation & Research Framework | 🚧 In Progress | Essay templates, research methodology, ethical guidelines |
+| **Phase 2** | Content Creation & Analysis | 📋 Planned | Essay writing workflows, thematic analysis, collaborative editing |
+| **Phase 3** | Publication & Dissemination | 📋 Planned | Web platform, automated formatting, version control |
 
 ## **📁 Repository Structure**
 
 ```
 ├── ai/                    # Human-AI collaboration logs & decision rationale
-├── analysis/              # Example reports showing methodology in action  
-├── data-public/          # Shareable datasets and metadata
-├── data-private/         # Local processing data (not committed)
-├── docs/                 # Pedagogical materials and tutorials
-├── scripts/              # Core processing functions with extensive comments
+├── analysis/              # Example essays and investigations showing methodology
+├── data-public/          # Research datasets and supporting materials  
+├── data-private/         # Local working files (not committed)
+├── docs/                 # Pedagogical materials and writing guides
+├── scripts/              # Writing workflow automation with extensive comments
 ├── flow.R                # Main workflow orchestration
 └── config.yml           # Project configuration
 ```
@@ -45,36 +45,36 @@ This project tracks the impact of the "Agency - Summer 2025: Agentic Public Infr
 ## **🎯 Learning Objectives**
 
 This project demonstrates:
-- **Human-AI Collaboration Patterns** - How domain experts guide AI assistants in research design
-- **Ethical Data Collection** - Public social media monitoring with respect for privacy  
-- **Reproducible Analytics** - R-based pipelines with full documentation
-- **Real-time Monitoring** - Automated systems for tracking evolving conversations
-- **Open Science Practices** - Transparent methodology and shareable insights
+- **Human-AI Collaboration Patterns** - How domain experts guide AI assistants in research and writing
+- **Ethical Research Practices** - Responsible investigation and citation of conference materials  
+- **Reproducible Writing Workflows** - R-based document generation with full documentation
+- **Collaborative Essay Development** - Version-controlled writing with peer review processes
+- **Open Science Practices** - Transparent methodology and shareable scholarly outputs
 
 ## **📋 Current Development**
 
 **Active Issues:**
 - 🎯 [#1: Project Foundation](../../issues/1) - This foundational setup
-- 📊 [#2: Data Collection Architecture](../../issues/2) - Social media scraping infrastructure  
-- 🧠 [#3: Sentiment Analysis Pipeline](../../issues/3) - Analytics engine development
-- 📈 [#4: Longitudinal Tracking System](../../issues/4) - Trend detection & monitoring
-- 📋 [#5: Automated Reporting Engine](../../issues/5) - Report generation & scheduling
-- 🔍 [#6: Real-time Monitoring Dashboard](../../issues/6) - Interactive visualization
+- 📝 [#2: Essay Framework Development](../../issues/2) - Writing templates and methodology
+- 🧠 [#3: Research & Investigation Pipeline](../../issues/3) - Topic analysis and source validation
+- 📈 [#4: Collaborative Writing System](../../issues/4) - Version control and peer review workflows
+- 📋 [#5: Publication Engine](../../issues/5) - Automated formatting and distribution
+- 🔍 [#6: Interactive Essay Platform](../../issues/6) - Web interface for reading and commenting
 
 **Get Started:** Begin with [Issue #1](../../issues/1) for project foundation, then follow numerical sequence for guided learning.
 
 ## **💡 Success Metrics**
 
-### **Technical Outcomes**
-- [ ] Functional social media monitoring system
-- [ ] Validated sentiment analysis accuracy  
-- [ ] Automated weekly impact reports
+### **Content Outcomes**
+- [ ] High-quality essays on AI governance and public infrastructure
+- [ ] Validated research methodologies for conference analysis  
+- [ ] Published investigations accessible to diverse audiences
 
 ### **Pedagogical Outcomes**  
-- [ ] Clear learning pathway for similar projects
-- [ ] Reusable code templates and methodologies
-- [ ] Documented human-AI collaboration patterns
+- [ ] Clear learning pathway for collaborative research projects
+- [ ] Reusable writing templates and methodologies
+- [ ] Documented human-AI collaboration patterns in scholarship
 
 ---
 
-**Monitor the impact of AI community events. Learn while building. Share the knowledge.**
+**Investigate AI governance. Write collaboratively. Share the knowledge.**
