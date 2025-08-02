@@ -39,7 +39,7 @@ bibliographystyle: "springer-humanities-author-date"
 
 # Introduction
 
-[Jean-Paul (JP) Lalonde](https://www.linkedin.com/in/jean-paullalonde/), at the AI Agency Summit in July 2025, advocated for a human-centered approach to AI adoption, adopting a famous DaVinci drawing Vitruvian Man as the sybmol^[This concept builds on the classical architectural principles of Marcus Vitruvius Pollio, who emphasized that good architecture must satisfy three fundamental principles: firmitas (strength), utilitas (functionality), and venustas (beauty).]:  
+[Jean-Paul (JP) Lalonde](https://www.linkedin.com/in/jean-paullalonde/), at the AI Agency Summit in July 2025, advocated for a human-centered approach to AI adoption, taking a famous DaVinci drawing Vitruvian Man as the sybmol^[This concept builds on the classical architectural principles of Marcus Vitruvius Pollio, who emphasized that good architecture must satisfy three fundamental principles: firmitas (strength), utilitas (functionality), and venustas (beauty).]:  
 
 > Just as Vitruvian Man reminds us of placing the human in the center of architectural design, so must we place humans in the center of the information architecture we design to enhance our intelligence with large language models.
 
